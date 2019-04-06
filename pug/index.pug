@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		title Document
+		link(rel="stylesheet", href="css/style.css")
+	body
+		- var navText = ["Home", "Services", "About", "portfolio", "Testimous","contact"]
+		.wrapper
+			.container
+				.header
+					.owl-carousel.owl-theme
+						.item
+							.item-info
+								.item-info-text Simple,Fresh & Unique Design  <br>
+									span.item-info-text_small Donec posuere augue venenatis
+								a(href="#").item-info-btn show more
+						.item
+							h4 2
+						.item
+							h4 3
+					.header-logo Business Name
+					ul.nav
+						each val in navText
+							li.nav-li
+								a(href="#").nav-link= val
+			.container	
+				.main
+					.main-header
+
+
+
+
+
+		script(src="js/all.js")
