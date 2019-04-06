@@ -8,9 +8,8 @@ html(lang="en")
 	body
 		- var navText = ["Home", "Services", "About", "portfolio", "Testimous","contact"]
 		.wrapper
-			.container
-				.header
-					.owl-carousel.owl-theme
+			.header
+				.owl-carousel.owl-theme
 						.item
 							.item-info
 								.item-info-text Simple,Fresh & Unique Design  <br>
@@ -20,15 +19,12 @@ html(lang="en")
 							h4 2
 						.item
 							h4 3
+				.container
 					.header-logo Business Name
 					ul.nav
 						each val in navText
 							li.nav-li
 								a(href="#").nav-link= val
-			.container	
-				.main
-					.main-header
-
 
 
 
