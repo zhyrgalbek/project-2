@@ -1,5 +1,37 @@
+@media screen and (max-width: 856px)
+	.header
+		.header-container
+			.nav
+				position: absolute
+				// border: 1px solid green
+				flex-flow: column nowrap
+				right: 0
+				top: 70px
+				// width: 300px
+				overflow: hidden
+				height: 0
+				transition-duration: .2s
+				&-li
+					border: 1px solid green
+					// height: 100px
+					// text-align: center
+					// background: red
+					&:nth-child(2n+1)
+						// background: green
+				&-link
+					border: 1px solid red
+					// line-height: 40px
+					margin-left: 0
+					text-align: center
+					
+
+			.nav-hamb
+				height: 500px
+			.hamburger
+				display: block
+				position: absolute
+				right: 0
 @media screen and (max-width: 790px)
-	
 	.main
 		.main-head
 			.main-block
