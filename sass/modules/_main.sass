@@ -24,20 +24,23 @@
 			// min-height: 100px
 			width: 565 / $container * 100%
 			padding-bottom: 80px
-			border: 1px solid red
 			box-sizing: border-box
 			display: flex
 			flex-flow: row nowrap
 			justify-content: space-between
+			// border: 1px solid red
 			&:nth-child(2n+1)
 				width: 525 / $container * 100%
 			&_icon
 				// border: 1px solid blue
-				width: 64 / 565 * 100%
+				width: 94px
 				text-align: center
-				background: url(../image/Tools.png) no-repeat
-				// background-size: 34px 34px
+				background: url(../image/Tools.png) no-repeat 50% 0
+				background-size: 32px 32px
 			&_text
+				box-sizing: border-box
+				padding-left: 20px
+				padding-right: 20px
 				h3
 					font-size: 1em
 					line-height: 22px
@@ -47,6 +50,47 @@
 					font-size: (13 / $font-size) + em
 					color: #7b7b7b
 					line-height: 22px
+	.main-read
+		// border: 1px solid blue
+		// background: blue
+		height: 620px
+		width: 100%
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+		&_left
+			background: url(../image/Layer-27.jpg) no-repeat
+			background-size: cover
+			width: 50%
+			background-position: center center
+		&_right
+			background: $m-r_right
+			width: 50%
+			.right_text
+				width: 525 / 750 * 100%
+				// min-height: 100px
+				// background: blue
+				margin-left: 62px
+				padding-top: 88px
+				color: $right_text
+				&-h3
+					font-size: 26 / $font-size + em
+					line-height: 22px
+					padding-bottom: 27px
+					text-transform: uppercase
+				&-p
+					font-size: 13 / $font-size + em
+					line-height: 24px
+					padding-bottom: 31px
+				&-btn
+					font-size: 14 / $font-size + em
+					text-transform: uppercase
+					background: $right_text-btn-bg
+					display: inline-block
+					padding: 10px 20px
+					border-radius: 2px
+					border: 1px solid $right_text-btn-brd
+					margin-top: 85 - 31 + px
 
 
 
