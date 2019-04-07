@@ -1,21 +1,25 @@
 .header
 	position: relative
-	.header-logo
+	.header-container
+		width: 1170px
 		position: absolute
+		top: 0
+		left: 50%
+		// border: 1px solid red
+		z-index: 2
+		display: flex
+		flex-flow: row nowrap
+		justify-content: space-between
+		transform: translate(-50%)
+		padding-top: 35px
+	.header-logo
 		display: block
 		color: $logo
 		font-size: 30px
-		line-height: 20px
-		top: 43px
-		left: 0
-		z-index: 2
+		line-height: 50px
 	.nav
 		display: flex
 		flex-flow: row wrap
-		position: absolute
-		z-index: 2
-		top: 25px
-		right: 0
 		&-li
 			list-style-type: none
 		&-link

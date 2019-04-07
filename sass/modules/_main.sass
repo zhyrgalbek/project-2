@@ -1,3 +1,48 @@
 .main
-	background: red
-	height: 100px
+	margin-top: -10px
+	.main-head
+		background: $main-bg
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+		&_text
+			width: 100%
+			padding-top: 75px
+			padding-bottom: 70px
+			text-align: center
+			h2
+				font-size: 26px
+				line-height: 22px
+				color: #709dca
+				text-transform: uppercase
+				padding-bottom: 5px
+			.podtext
+				font-size: 16px
+				line-height: 22px
+				color: #394b50
+		.main-block
+			height: 100px
+			width: $container / 2
+			border: 1px solid red
+			box-sizing: border-box
+			display: flex
+			flex-flow: row nowrap
+			justify-content: space-between
+			&_icon
+				// border: 1px solid blue
+				width: 20%
+				text-align: center
+				background: url(../image/Tools.png) no-repeat 50% 0%
+			&_text
+				h3
+					font-size: 1em
+					line-height: 22px
+					color: #394b50
+					text-transform: uppercase
+				p
+					font-size: (13 / $font-size) + em
+					color: #7b7b7b
+					line-height: 22px
+
+
+
