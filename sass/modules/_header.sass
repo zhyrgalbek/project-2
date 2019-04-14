@@ -94,7 +94,7 @@
 	top: 50%
 	text-align: center
 	transform: translateY(-80%)
-	font-size: 60px
+	font-size: 50px
 	line-height: 20px
 	background: transparent	
 	width: 60px
@@ -103,8 +103,24 @@
 	border-radius: 50%
 	border: 3px solid $owl-prev_next
 	color: $owl-strelka
+%style
+	content: ""
+	position: absolute
+	width: 30px
+	height: 4px
+	background: red
 .owl-carousel .owl-nav button.owl-next
 	right: 100px
+	&:after
+		@extend %style
+		top: 9px
+		left: 13%
+		transform: rotate(-145deg) translate(-50%, -50%)
+	&:before
+		@extend %style
+		top: 35px
+		left: 35%
+		transform: rotate(145deg) 
 .owl-carousel .owl-nav button.owl-prev
 	left: 100px
 .owl-carousel .owl-nav button.owl-next:hover
