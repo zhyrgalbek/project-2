@@ -103,27 +103,22 @@
 	border-radius: 50%
 	border: 3px solid $owl-prev_next
 	color: $owl-strelka
-%style
-	content: ""
-	position: absolute
-	width: 30px
-	height: 4px
-	background: red
-.owl-carousel .owl-nav button.owl-next
-	right: 100px
+%next
 	background: url("../image/Layer-6-copy.png") no-repeat
 	background-position: 50% 50%
-	background-size: 13px
-.owl-carousel .owl-nav button.owl-prev
-	left: 100px
+%prev
 	background: url("../image/Layer-4.png") no-repeat
 	background-position: 50% 50%
+.owl-carousel .owl-nav button.owl-next
+	right: 100px	
+	@extend %next
+.owl-carousel .owl-nav button.owl-prev
+	left: 100px
+	@extend %prev
 .owl-carousel .owl-nav button.owl-next:hover
-	background: url("../image/Layer-6-copy.png") no-repeat
-	background-position: 50% 50%
-	background-size: 13px
+	@extend %next
 .owl-carousel .owl-nav button.owl-prev:hover
-	background: transparent
+	@extend %prev
 	color: black
 .owl-theme .owl-dots
 	position: absolute

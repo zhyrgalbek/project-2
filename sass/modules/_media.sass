@@ -7,30 +7,35 @@
 				flex-flow: column nowrap
 				right: 0
 				top: 70px
-				// width: 300px
+				width: 100%
+				height: 100%
 				overflow: hidden
 				height: 0
 				transition-duration: .2s
 				&-li
-					border: 1px solid green
-					// height: 100px
-					// text-align: center
-					// background: red
+					background: red
 					&:nth-child(2n+1)
-						// background: green
+						background: #ccc
 				&-link
-					border: 1px solid red
-					// line-height: 40px
+					display: block
+					// background: #ccc
+					// border: 1px solid red
 					margin-left: 0
+					padding: 15px 25px
+					font-size: 22px
 					text-align: center
-					
-
+					// border-radius: 10px
+					color: black
 			.nav-hamb
-				height: 500px
+				height: 100vh
 			.hamburger
 				display: block
 				position: absolute
 				right: 0
+	.owl-carousel .owl-nav button.owl-next
+		display: none
+	.owl-carousel .owl-nav button.owl-prev
+		display: none
 @media screen and (max-width: 790px)
 	.main
 		.main-head
@@ -41,3 +46,17 @@
 	.container
 		padding-left: 20px
 		padding-right: 20px
+	.main
+		.main-read
+			&_left
+				width: 100%
+			&_right
+				width: 100%
+		.main-tabs-container
+			.tab_content
+				flex-flow: column nowrap
+				padding-left: 20px
+				padding-right: 20px
+				&-info
+					width: 100%
+					margin-bottom: 10px
