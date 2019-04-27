@@ -54,14 +54,24 @@
 				width: 100%
 		.main-tabs-container
 			.tab_content
-				flex-flow: column nowrap
+				flex-flow: row wrap
 				padding-left: 20px
 				padding-right: 20px
 				&-info
-					width: 100%
+					width: 50%
 					margin-bottom: 10px
+		.main-work
+			.container
+				// border: 1px solid green
+				.main-tabs
+					flex-flow: row wrap
 @media screen and (max-width: 480px)
 	.main
+		.main-tabs-container
+			.tab_content
+				&-info
+					width: 100%
+					margin-bottom: 10px
 		.main-work
 			.container
 				// border: 1px solid green
@@ -70,7 +80,6 @@
 					flex-flow: column nowrap
 					align-items: center
 					justify-content: flex-start
-					padding: 0
 					li
 						margin-left: 0
 						// border: 1px solid green
