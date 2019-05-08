@@ -33,10 +33,13 @@
 				width: 525 / $container * 100%
 			&_icon
 				// border: 1px solid blue
-				width: 94px
-				text-align: center
+				display: block
+				width: 9vw
+				height: 100px
+				// text-align: center
 				background: url(../image/Tools.png) no-repeat 50% 0
 				background-size: 32px 32px
+				// float: left
 			&_text
 				box-sizing: border-box
 				padding-left: 20px
@@ -156,7 +159,7 @@
 		min-height: 100px
 		// background: red
 		margin-top: 28px
-		margin-bottom: 67px
+		margin-bottom: 47px
 		.tab_content
 			// border: 1px solid red
 			display: flex
@@ -221,8 +224,94 @@
 				&:nth-child(8)
 					background: url(../image/Layer-20.jpg) no-repeat
 					background-size: cover
-
-
+	.main-testimonails
+		// padding-top: 35px
+		// border: 1px solid red
+		min-height: 200px
+		padding-bottom: 45px
+		.testimonails-h2
+			font-size: 26 / $font-size + em
+			text-transform: uppercase
+			text-align: center
+			color: #709dca
+		.icon-line
+			// border: 1px solid red
+			width: 40px
+			height: 30px
+			text-align: center
+			margin: 0 auto
+			margin-top: 15px
+			position: relative
+			&:after
+				content: ""
+				position: absolute
+				display: block
+				background: #ffc155
+				width: 100px
+				height: 2px
+				top: 50%
+				left: 40px
+			&:before
+				content: ""
+				position: absolute
+				display: block
+				background: #ffc155
+				width: 100px
+				height: 2px
+				top: 50%
+				right: 40px
+			.icon-comments
+				font-size: 24px
+				color: #ffc155
+		#carousel-2
+			.item
+				// border: 1px solid red
+				width: 454px
+				min-height: 200px
+				text-align: center
+				line-height: 200px
+				padding-top: 60px
+		.comment
+			// border: 1px solid red
+			width: 454px
+			display: flex
+			justify-content: flex-start
+			flex-flow: row wrap
+			align-items: center
+			// min-height: 100px
+			&_text
+				padding: 23px
+				font-size: 13px
+				line-height: 23px
+				color:#747474
+				background: #f6f3f3
+				position: relative
+				&:after
+					content: ""
+					position: absolute
+					width: 0
+					height: 0
+					border-top: 20px solid #f6f3f3
+					border-right: 20px solid transparent
+					top: 157px
+					left: 43px
+			.icon_comment
+				margin-top: 15px
+				width: 35px
+				height: 35px
+				background: url(../image/icon-copy.png) no-repeat
+			.family,.company
+				font-size: 13px
+				line-height: 20px
+				font-weight: bold
+				margin-left: 18px
+				margin-top: 12px
+			.company
+				font-weight: lighter
+				margin-left: 3px
+			
+				// border: 1px solid red
+				// display: block
 					
 
 

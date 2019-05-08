@@ -34,97 +34,133 @@
 			text-decoration: none
 			&::first-child
 				margin-left: 0
-
-.owl-carousel
-	background: transparent
-	margin: 0 auto
-	position: relative
-.item
-	background: #ccc
-	min-height: 100px
-	display: flex
-	align-items: center
-	justify-content: center
-	height: 100vh
-	width: 100vw
-	position: relative
-	&::before
-		content: ""
-		position: absolute
-		display: block
-		background: red
-		width: 100vw
-		height: 100vh
-		left: 0
-		top: 0
-		z-index: 10
-		background: url(../image/Layer-3.png)
-	&:first-child
-		background: url(../image/Layer-19.jpg)
-		background-size: cover
-		background-repeat: no-repeat
-	&-info
-		// border: 1px solid red
-		// width: 735px
-		width: 70vw
-		position: absolute
-		// top: 260px
-		z-index: 11
-		text-align: center
-		&-text
-			font-size: 48px
-			line-height: auto
-			color: $owl-text
+	.owl-carousel
+		background: transparent
+		margin: 0 auto
+		position: relative
+		.owl-nav button.owl-next, 
+		.owl-nav button.owl-prev
+			position: absolute
+			top: 50%
 			text-align: center
-			&_small
-				font-size: 25px
-				position: relative
-				top: -25px
-		&-btn
-			text-decoration: none
-			color: #fff
-			font-size: 20px
-			background: $item-info-btn
-			display: inline-block
-			padding: 15px 20px
-			border-radius: 4px
-			text-transform: uppercase
-			margin-top: 95px
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev
-	position: absolute
-	top: 50%
-	text-align: center
-	transform: translateY(-80%)
-	font-size: 50px
-	line-height: 20px
-	background: transparent	
-	width: 60px
-	height: 60px
-	outline: none
-	border-radius: 50%
-	border: 3px solid $owl-prev_next
-	color: $owl-strelka
-%next
-	background: url("../image/Layer-6-copy.png") no-repeat
-	background-position: 50% 50%
-%prev
-	background: url("../image/Layer-4.png") no-repeat
-	background-position: 50% 50%
-.owl-carousel .owl-nav button.owl-next
-	right: 100px	
-	@extend %next
-.owl-carousel .owl-nav button.owl-prev
-	left: 100px
-	@extend %prev
-.owl-carousel .owl-nav button.owl-next:hover
-	@extend %next
-.owl-carousel .owl-nav button.owl-prev:hover
-	@extend %prev
-	color: black
-.owl-theme .owl-dots
-	position: absolute
-	top: 90%
-	left: 50%
-	transform: translate(-50%, 0%)
+			transform: translateY(-80%)
+			font-size: 50px
+			line-height: 20px
+			background: transparent	
+			width: 60px
+			height: 60px
+			outline: none
+			border-radius: 50%
+			border: 3px solid $owl-prev_next
+			color: $owl-strelka
+		%next
+			background: url("../image/Layer-6-copy.png") no-repeat
+			background-position: 50% 50%
+		%prev
+			background: url("../image/Layer-4.png") no-repeat
+			background-position: 50% 50%
+		.owl-nav button.owl-next
+			right: 100px	
+			@extend %next
+		.owl-nav button.owl-prev
+			left: 100px
+			@extend %prev
+		.owl-nav button.owl-next:hover
+			@extend %next
+		.owl-nav button.owl-prev:hover
+			@extend %prev
+			color: black
+	.owl-theme .owl-dots
+		position: absolute
+		top: 90%
+		left: 50%
+		transform: translate(-50%, 0%)
+	.item
+		background: #ccc
+		min-height: 100px
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 100vh
+		width: 100vw
+		position: relative
+		&::before
+			content: ""
+			position: absolute
+			display: block
+			background: red
+			width: 100vw
+			height: 100vh
+			left: 0
+			top: 0
+			z-index: 10
+			background: url(../image/Layer-3.png)
+		&:first-child
+			background: url(../image/Layer-19.jpg)
+			background-size: cover
+			background-repeat: no-repeat
+		&-info
+			// border: 1px solid red
+			// width: 735px
+			width: 70vw
+			position: absolute
+			// top: 260px
+			z-index: 11
+			text-align: center
+			&-text
+				font-size: 48px
+				line-height: auto
+				color: $owl-text
+				text-align: center
+				&_small
+					font-size: 25px
+					position: relative
+					top: -25px
+			&-btn
+				text-decoration: none
+				color: #fff
+				font-size: 20px
+				background: $item-info-btn
+				display: inline-block
+				padding: 15px 20px
+				border-radius: 4px
+				text-transform: uppercase
+				margin-top: 95px
+	// .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev
+	// 	position: absolute
+	// 	top: 50%
+	// 	text-align: center
+	// 	transform: translateY(-80%)
+	// 	font-size: 50px
+	// 	line-height: 20px
+	// 	background: transparent	
+	// 	width: 60px
+	// 	height: 60px
+	// 	outline: none
+	// 	border-radius: 50%
+	// 	border: 3px solid $owl-prev_next
+	// 	color: $owl-strelka
+	// %next
+	// 	background: url("../image/Layer-6-copy.png") no-repeat
+	// 	background-position: 50% 50%
+	// %prev
+	// 	background: url("../image/Layer-4.png") no-repeat
+	// 	background-position: 50% 50%
+	// .owl-carousel .owl-nav button.owl-next
+	// 	right: 100px	
+	// 	@extend %next
+	// .owl-carousel .owl-nav button.owl-prev
+	// 	left: 100px
+	// 	@extend %prev
+	// .owl-carousel .owl-nav button.owl-next:hover
+	// 	@extend %next
+	// .owl-carousel .owl-nav button.owl-prev:hover
+	// 	@extend %prev
+	// 	color: black
+	// .owl-theme .owl-dots
+	// 	position: absolute
+	// 	top: 90%
+	// 	left: 50%
+	// 	transform: translate(-50%, 0%)
 
 
