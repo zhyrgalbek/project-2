@@ -80,17 +80,17 @@ html(lang="en")
 							p Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.
 						ul.main-tabs
 							li
-								a(href="#tab1") all
+								a( data-tab="1") all
 							li
-								a(href="#tab2") web
+								a( data-tab="2") web
 							li
-								a(href="#tab3") logo design
+								a( data-tab="3") logo design
 							li
-								a(href="#tab4") WordPress
+								a( data-tab="4") WordPress
 							li
-								a(href="#tab5") E-commerce
+								a( data-tab="5") E-commerce
 					.main-tabs-container
-						.tab_content#tab1
+						.tab_content(data-tab="1")
 							.tab_content-info.one
 								.info_text
 									h3 Labore et dolore magnam 
@@ -123,7 +123,7 @@ html(lang="en")
 								.info_text
 									h3 Labore et dolore magnam 
 									p WordPress
-						.tab_content#tab2
+						.tab_content(data-tab="2")
 							.tab_content-info.two
 								.info_text
 									h3 Labore et dolore magnam 
@@ -136,7 +136,7 @@ html(lang="en")
 								.info_text
 									h3 Labore et dolore magnam 
 									p WordPress
-						.tab_content#tab3
+						.tab_content(data-tab="3")
 							.tab_content-info.one
 								.info_text
 									h3 Labore et dolore magnam 
