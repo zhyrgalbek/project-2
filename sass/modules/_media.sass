@@ -5,12 +5,14 @@
 				position: absolute
 				// border: 1px solid green
 				flex-flow: column nowrap
-				right: 0
+				// right: 0
 				top: 70px
-				width: 100%
-				height: 100%
+				left: -1000px
+				// bottom: 0
+				width: 100vw
+				// height: 100%
 				overflow: hidden
-				height: 0
+				height: 100vh
 				transition-duration: .2s
 				&-li
 					background: red
@@ -27,7 +29,9 @@
 					// border-radius: 10px
 					color: black
 			.nav-hamb
-				height: 100vh
+				// height: 100vh
+				// width: 100%
+				left: -95px
 			.hamburger
 				display: block
 				position: absolute
@@ -44,8 +48,7 @@
 				&:nth-child(2n+1)
 					width: 100%
 				&_icon
-					width: 64px
-					height: 32px
+					flex-shrink: 1.3
 	.container
 		padding-left: 20px
 		padding-right: 20px
@@ -71,6 +74,10 @@
 					flex-flow: row wrap
 @media screen and (max-width: 480px)
 	.main
+		.main-head
+			.main-block
+				&_icon
+					flex-shrink: 0.68
 		.main-tabs-container
 			.tab_content
 				&-info
