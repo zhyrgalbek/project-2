@@ -80,7 +80,7 @@ gulp.task("watch", function(){
 	return gulp.src(path.src.sass)
 		.pipe(sass())
 		.pipe(autoprefixer({
-			browsers: ['last 2 versions'],	
+			browsers: ['last 2 versions'],
 			cascade: false
 		}))
 		.pipe(gulp.dest(path.dest.sass))
@@ -116,10 +116,5 @@ gulp.task("watch", function(){
 		notify: false
 	});
 });
- 
- gulp.task("default", gulp.series(gulp.parallel("sass","pug","concat","watch","browserSync")));
 
-
-
-
- 
+ gulp.task("default", gulp.series("sass","pug","concat",gulp.parallel("watch","browserSync")));
