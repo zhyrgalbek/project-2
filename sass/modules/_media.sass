@@ -1,3 +1,7 @@
+@media screen and (max-width: 1170px)
+	.container
+		padding-left: 20px
+		padding-right: 20px
 @media screen and (max-width: 856px)
 	.header
 		.header-container
@@ -41,43 +45,31 @@
 	.owl-carousel .owl-nav button.owl-prev
 		display: none
 @media screen and (max-width: 768px)
-	.main
-		.main-head
-			.main-block
+	.main-head
+		.main-block
+			width: 50%
+			&:nth-child(2n+1)
 				width: 50%
-				&:nth-child(2n+1)
-					width: 50%
-				&_icon
-					// flex-shrink: 1.3
-	.container
-		padding-left: 20px
-		padding-right: 20px
-	.main
-		.main-read
-			&_left
-				width: 100%
-			&_right
-				width: 100%
-		.main-tabs-container
-			.tab_content
+	.main-read
+		&_left
+			width: 100%
+		&_right
+			width: 100%
+	.main-tabs-container
+		.tab_content
+			flex-flow: row wrap
+			padding-left: 20px
+			padding-right: 20px
+			justify-content: center
+			&-info
+				width: 50%
+				height: 30vw
+	.main-work
+		.container
+			// border: 1px solid green
+			.main-tabs
 				flex-flow: row wrap
-				padding-left: 20px
-				padding-right: 20px
-				justify-content: center
-				&-info
-					width: 50%
-					height: 30vw
-		.main-work
-			.container
-				// border: 1px solid green
-				.main-tabs
-					flex-flow: row wrap
-	.main
-		.main-testimonails
-			#owl-carousel-2
-				.item
-					// display: inline-block
-
+				// align-items: center
 	.footer
 		.container
 			.business
@@ -93,34 +85,32 @@
 					&:nth-child(3n+1)
 						// padding-left: 20px
 @media screen and (max-width: 480px)
-	.main
-		.main-head
-			.main-block
+	.main-head
+		.main-block
+			width: 100%
+			&:nth-child(2n+1)
 				width: 100%
-				&:nth-child(2n+1)
-					width: 100%
-	.main
-		.main-head
-			.main-block
-				&_icon
-					flex-shrink: 0.68
-		.main-tabs-container
-			.tab_content
-				&-info
-					width: 100%
-					margin-bottom: 10px
-					height: 55vw
-		.main-work
-			.container
-				// border: 1px solid green
-				.main-tabs
-					// border: 1px solid red
-					flex-flow: column nowrap
-					align-items: center
-					justify-content: flex-start
-					li
-						margin-left: 0
-						// border: 1px solid green
+		.main-block
+			&_icon
+				flex-shrink: 0.68
+	.main-tabs-container
+		.tab_content
+			padding: 0 15px
+			&-info
+				width: 100%
+				margin-bottom: 10px
+				height: 55vw
+	.main-work
+		.container
+			// border: 1px solid green
+			.main-tabs
+				// border: 1px solid red
+				flex-flow: column nowrap
+				align-items: center
+				justify-content: flex-start
+				li
+					margin-left: 0
+					// border: 1px solid green
 	.footer
 		.container
 			.business
