@@ -1,0 +1,21 @@
+- var navText = ["Home", "Services", "About", "portfolio", "Testimous","contact"]
+header.header
+	#carousel-1.owl-carousel.owl-theme
+		.item
+			.item-info
+				.item-info-text Simple,Fresh & Unique Design  <br>
+									span.item-info-text_small Donec posuere augue venenatis
+				a(href="#").item-info-btn show more
+		.item
+			h4 2
+		.item
+			h4 3
+	.header-container
+		.header-logo Business Name
+		.hamburger.hamburger--elastic
+			.hamburger-box
+				.hamburger-inner
+		ul.nav
+			each val in navText
+				li.nav-li
+					a(href="#").nav-link= val
