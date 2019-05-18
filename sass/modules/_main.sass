@@ -1,336 +1,333 @@
 .main
 	margin-top: -10px
-	.main-head
-		background: $main-bg
+.main-head
+	background: $main-bg
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+	&_text
+		width: 100%
+		padding-top: 75px
+		padding-bottom: 70px
+		text-align: center
+		h2
+			font-size: 26px
+			line-height: 22px
+			color: #709dca
+			text-transform: uppercase
+			padding-bottom: 5px
+		.podtext
+			font-size: 16px
+			line-height: 22px
+			color: #394b50
+	.main-block
+		// min-height: 100px
+		width: 565 / $container * 100%
+		padding-bottom: 80px
+		box-sizing: border-box
 		display: flex
-		flex-flow: row wrap
+		flex-flow: row nowrap
 		justify-content: space-between
+		// border: 1px solid red
+		&:nth-child(2n+1)
+			width: 525 / $container * 100%
+		&_icon
+			// border: 1px solid blue
+			// flex-basis: 78px
+			width: 37px
+			// flex-shrink: 0.9
+			flex-shrink: 1
+			// width: 78px
+			height: 32px
+			// text-align: center
+			// background-size: contain
+			// float: left
+			&.first
+				background: url(../image/Analytics.png) no-repeat -66px -32px
+			&.second
+				background: url(../image/Analytics.png) no-repeat -34px 0
+			&.third
+				background: url(../image/Analytics.png) no-repeat 5px -32px
+			&.four
+				background: url(../image/Analytics.png) no-repeat 5px 0
+			&.fifeth
+				background: url(../image/Analytics.png) no-repeat -31px -32px
+			&.sixe
+				background: url(../image/Analytics.png) no-repeat -66px 0
 		&_text
-			width: 100%
-			padding-top: 75px
-			padding-bottom: 70px
-			text-align: center
-			h2
-				font-size: 26px
-				line-height: 22px
-				color: #709dca
-				text-transform: uppercase
-				padding-bottom: 5px
-			.podtext
-				font-size: 16px
+			flex-shrink: 2
+			width: 95%
+			// border: 1px solid red
+			box-sizing: border-box
+			padding-left: 20px
+			padding-right: 20px
+			h3
+				font-size: 1em
 				line-height: 22px
 				color: #394b50
-		.main-block
-			// min-height: 100px
-			width: 565 / $container * 100%
-			padding-bottom: 80px
-			box-sizing: border-box
-			display: flex
-			flex-flow: row nowrap
-			justify-content: space-between
-			// border: 1px solid red
-			&:nth-child(2n+1)
-				width: 525 / $container * 100%
-			&_icon
-				// border: 1px solid blue
-				// flex-basis: 78px
-				width: 37px
-				// flex-shrink: 0.9
-				flex-shrink: 1
-				// width: 78px
-				height: 32px
-				// text-align: center
-				// background-size: contain
-				// float: left
-				&.first
-					background: url(../image/Analytics.png) no-repeat -66px -32px
-				&.second
-					background: url(../image/Analytics.png) no-repeat -34px 0
-				&.third
-					background: url(../image/Analytics.png) no-repeat 5px -32px
-				&.four
-					background: url(../image/Analytics.png) no-repeat 5px 0
-				&.fifeth
-					background: url(../image/Analytics.png) no-repeat -31px -32px
-				&.sixe
-					background: url(../image/Analytics.png) no-repeat -66px 0
-			&_text
-				flex-shrink: 2
-				width: 95%
-				// border: 1px solid red
-				box-sizing: border-box
-				padding-left: 20px
-				padding-right: 20px
-				h3
-					font-size: 1em
-					line-height: 22px
-					color: #394b50
-					text-transform: uppercase
-				p
-					font-size: (13 / $font-size) + em
-					color: #7b7b7b
-					line-height: 22px
-	.main-read
-		// border: 1px solid blue
-		// background: blue
-		// height: 620px
-		width: 100%
-		display: flex
-		flex-flow: row wrap
-		justify-content: space-between
-		&_left
-			background: url(../image/Layer-27.jpg) no-repeat
-			background-size: cover
-			min-height: 620px
-			width: 50%
-			background-position: center center
-		&_right
-			background: $m-r_right
-			width: 50%
-			padding-bottom: 78px
-			.right_text
-				width: 525 / 750 * 100%
-				// min-height: 100px
-				// background: blue
-				margin-left: 62px
-				padding-top: 88px
-				color: $right_text
-				&-h3
-					font-size: 26 / $font-size + em
-					line-height: 22px
-					padding-bottom: 27px
-					text-transform: uppercase
-				&-p
-					font-size: 13 / $font-size + em
-					line-height: 24px
-					padding-bottom: 31px
-				&-btn
-					font-size: 14 / $font-size + em
-					text-transform: uppercase
-					background: $right_text-btn-bg
-					display: inline-block
-					padding: 10px 20px
-					border-radius: 2px
-					border: 1px solid $right_text-btn-brd
-					margin-top: 85 - 31 + px
-	.main-work
-		padding-top: 95px
-		background: #fff
-		&_see
-			width: 810 / $container * 100%
-			margin: 0 auto
-			h2
-				font-size: 26 / $font-size + em
-				line-height: auto
-				color: #709dca
 				text-transform: uppercase
-				text-align: center
-				padding-bottom: 60px
-				position: relative
-				&:after
-					content: ""
-					display: block
-					width: 52px
-					height: 40px
-					background: #fff url("../image/tochka.png")
-					background-repeat: no-repeat
-					background-position: 50% 50%
-					position: absolute
-					top: 60%
-					left: 50%
-					transform: translate(-50%, -50%)
-					z-index: 2
-				&:before
-					content: ""
-					position: absolute
-					width: 225px
-					height: 2px
-					background: #ffd68e
-					top: 60%
-					left: 50%
-					transform: translateX(-50%)
-					z-index: 1
 			p
-				font-size: 1em
-				line-height: 22 / $font-size + em
-				color: #062033
-				text-align: center
-		.main-tabs
-			display: flex
-			flex-flow: row nowrap
-			justify-content: center
-			padding: 0
-			&_active
-				background: #709dca
-				border-radius: 3px				
-			li
-				margin-left: 30px
-				list-style-type: none
-				a
-					font-size: 14 / $font-size + em
-					text-decoration: none
-					display: block
-					padding: 5px 20px
-					color: #273e4e
-					&:hover
-						cursor: pointer
-	.main-tabs-container
-		min-height: 100px
-		// background: red
-		margin-top: 28px
-		margin-bottom: 47px
-		.tab_content
-			// border: 1px solid red
-			display: flex
-			flex-flow: row wrap
-			justify-content: center
-			&-info
-				// border: 1px solid green
-				box-sizing: border-box
-				width: 25%
-				// width: 24.68vw
-				// height: 278px
-				height: 20vw
-				position: relative
-				// transition-duration: 2s
-				.info_text
-					position: absolute
-					width: 100%
-					height: 100%
-					background: #e9b14f url("../image/Shape-296.png")
-					background-repeat: no-repeat
-					background-position: 50% 30%
-					opacity: 0
-					transition-duration: 0.2s
-					overflow: hidden
-					// position: relative
-					h3
-						text-align: center
-						// padding: 10px 0 
-						color: #fff
-						font-size: 1em
-						line-height: 22px
-						margin-top: 35%
-					p
-						font-size: 13px
-						line-height: 22px
-						text-align: center
-						color: #fff
-				&:hover
-					.info_text
-						opacity: .9
-			.one
-				background: url(../image/Layer-21.jpg) no-repeat
-				background-size: cover
-			.two
-				background: url(../image/Layer-25.jpg) no-repeat
-				background-size: cover
-			.three
-				background: url(../image/Layer-30.jpg) no-repeat
-				background-size: cover
-			.foure
-				background: url(../image/Layer-22.jpg) no-repeat
-				background-size: cover
-			.fife
-				background: url(../image/Layer-23.jpg) no-repeat
-				background-size: cover
-			.sixe
-				background: url(../image/Layer-26.jpg) no-repeat
-				background-size: cover
-			.seven
-				background: url(../image/Layer-24.jpg) no-repeat
-				background-size: cover
-			.eight
-				background: url(../image/Layer-20.jpg) no-repeat
-				background-size: cover
-	.main-testimonails
-		// padding-top: 35px
-		// border: 1px solid red
-		min-height: 200px
-		padding-bottom: 45px
-		.testimonails-h2
+				font-size: (13 / $font-size) + em
+				color: #7b7b7b
+				line-height: 22px
+.main-read
+	// border: 1px solid blue
+	// background: blue
+	// height: 620px
+	width: 100%
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+	&_left
+		background: url(../image/Layer-27.jpg) no-repeat
+		background-size: cover
+		min-height: 620px
+		width: 50%
+		background-position: center center
+	&_right
+		background: $m-r_right
+		width: 50%
+		padding-bottom: 78px
+		.right_text
+			width: 525 / 750 * 100%
+			// min-height: 100px
+			// background: blue
+			margin-left: 62px
+			padding-top: 88px
+			color: $right_text
+			&-h3
+				font-size: 26 / $font-size + em
+				line-height: 22px
+				padding-bottom: 27px
+				text-transform: uppercase
+			&-p
+				font-size: 13 / $font-size + em
+				line-height: 24px
+				padding-bottom: 31px
+			&-btn
+				font-size: 14 / $font-size + em
+				text-transform: uppercase
+				background: $right_text-btn-bg
+				display: inline-block
+				padding: 10px 20px
+				border-radius: 2px
+				border: 1px solid $right_text-btn-brd
+				margin-top: 85 - 31 + px
+.main-work
+	padding-top: 95px
+	background: #fff
+	&_see
+		width: 810 / $container * 100%
+		margin: 0 auto
+		h2
 			font-size: 26 / $font-size + em
+			line-height: auto
+			color: #709dca
 			text-transform: uppercase
 			text-align: center
-			color: #709dca
-		.icon-line
-			// border: 1px solid red
-			width: 40px
-			height: 30px
+			padding-bottom: 60px
+			position: relative
+			&:after
+				content: ""
+				display: block
+				width: 52px
+				height: 40px
+				background: #fff url("../image/tochka.png")
+				background-repeat: no-repeat
+				background-position: 50% 50%
+				position: absolute
+				top: 60%
+				left: 50%
+				transform: translate(-50%, -50%)
+				z-index: 2
+			&:before
+				content: ""
+				position: absolute
+				width: 225px
+				height: 2px
+				background: #ffd68e
+				top: 60%
+				left: 50%
+				transform: translateX(-50%)
+				z-index: 1
+		p
+			font-size: 1em
+			line-height: 22 / $font-size + em
+			color: #062033
 			text-align: center
-			margin: 0 auto
-			margin-top: 15px
+	.main-tabs
+		display: flex
+		flex-flow: row nowrap
+		justify-content: center
+		padding: 0
+		&_active
+			background: #709dca
+			border-radius: 3px				
+		li
+			margin-left: 30px
+			list-style-type: none
+			a
+				font-size: 14 / $font-size + em
+				text-decoration: none
+				display: block
+				padding: 5px 20px
+				color: #273e4e
+				&:hover
+					cursor: pointer
+.main-tabs-container
+	min-height: 100px
+	// background: red
+	margin-top: 28px
+	margin-bottom: 47px
+	.tab_content
+		// border: 1px solid red
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+		&-info
+			// border: 1px solid green
+			box-sizing: border-box
+			width: 25%
+			// width: 24.68vw
+			// height: 278px
+			height: 20vw
+			position: relative
+			// transition-duration: 2s
+			.info_text
+				position: absolute
+				width: 100%
+				height: 100%
+				background: #e9b14f url("../image/Shape-296.png")
+				background-repeat: no-repeat
+				background-position: 50% 30%
+				opacity: 0
+				transition-duration: 0.2s
+				overflow: hidden
+				// position: relative
+				h3
+					text-align: center
+					// padding: 10px 0 
+					color: #fff
+					font-size: 1em
+					line-height: 22px
+					margin-top: 35%
+				p
+					font-size: 13px
+					line-height: 22px
+					text-align: center
+					color: #fff
+			&:hover
+				.info_text
+					opacity: .9
+		.one
+			background: url(../image/Layer-21.jpg) no-repeat
+			background-size: cover
+		.two
+			background: url(../image/Layer-25.jpg) no-repeat
+			background-size: cover
+		.three
+			background: url(../image/Layer-30.jpg) no-repeat
+			background-size: cover
+		.foure
+			background: url(../image/Layer-22.jpg) no-repeat
+			background-size: cover
+		.fife
+			background: url(../image/Layer-23.jpg) no-repeat
+			background-size: cover
+		.sixe
+			background: url(../image/Layer-26.jpg) no-repeat
+			background-size: cover
+		.seven
+			background: url(../image/Layer-24.jpg) no-repeat
+			background-size: cover
+		.eight
+			background: url(../image/Layer-20.jpg) no-repeat
+			background-size: cover
+.main-testimonails
+	// padding-top: 35px
+	// border: 1px solid red
+	min-height: 200px
+	padding-bottom: 45px
+	.testimonails-h2
+		font-size: 26 / $font-size + em
+		text-transform: uppercase
+		text-align: center
+		color: #709dca
+	.icon-line
+		// border: 1px solid red
+		width: 40px
+		height: 30px
+		text-align: center
+		margin: 0 auto
+		margin-top: 15px
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			display: block
+			background: #ffc155
+			width: 100px
+			height: 2px
+			top: 50%
+			left: 40px
+		&:before
+			content: ""
+			position: absolute
+			display: block
+			background: #ffc155
+			width: 100px
+			height: 2px
+			top: 50%
+			right: 40px
+		.icon-comments
+			font-size: 24px
+			color: #ffc155
+	#carousel-2
+		.item
+			// border: 1px solid red
+			// width: 454px
+			min-height: 200px
+			text-align: center
+			line-height: 200px
+			padding-top: 60px
+	.comment
+		// border: 1px solid red
+		width: 100%
+		display: flex
+		justify-content: flex-start
+		flex-flow: row wrap
+		align-items: center
+		// min-height: 100px
+		&_text
+			padding: 23px
+			font-size: 13px
+			line-height: 23px
+			color:#747474
+			background: #f6f3f3
 			position: relative
 			&:after
 				content: ""
 				position: absolute
-				display: block
-				background: #ffc155
-				width: 100px
-				height: 2px
-				top: 50%
-				left: 40px
-			&:before
-				content: ""
-				position: absolute
-				display: block
-				background: #ffc155
-				width: 100px
-				height: 2px
-				top: 50%
-				right: 40px
-			.icon-comments
-				font-size: 24px
-				color: #ffc155
-		#carousel-2
-			.item
-				// border: 1px solid red
-				width: 454px
-				min-height: 200px
-				text-align: center
-				line-height: 200px
-				padding-top: 60px
-		.comment
-			// border: 1px solid red
-			width: 454px
-			display: flex
-			justify-content: flex-start
-			flex-flow: row wrap
-			align-items: center
-			// min-height: 100px
-			&_text
-				padding: 23px
-				font-size: 13px
-				line-height: 23px
-				color:#747474
-				background: #f6f3f3
-				position: relative
-				&:after
-					content: ""
-					position: absolute
-					width: 0
-					height: 0
-					border-top: 20px solid #f6f3f3
-					border-right: 20px solid transparent
-					top: 157px
-					left: 43px
-			.icon_comment
-				margin-top: 15px
-				width: 35px
-				height: 35px
-				background: url(../image/icon-copy.png) no-repeat
-			.family,.company
-				font-size: 13px
-				line-height: 20px
-				font-weight: bold
-				margin-left: 18px
-				margin-top: 12px
-			.company
-				font-weight: lighter
-				margin-left: 3px
-			
-				// border: 1px solid red
-				// display: block
-					
+				width: 0
+				height: 0
+				border-top: 20px solid #f6f3f3
+				border-right: 20px solid transparent
+				top: 135px
+				left: 43px
+		.icon_comment
+			margin-top: 15px
+			width: 35px
+			height: 35px
+			background: url(../image/icon-copy.png) no-repeat
+		.family,.company
+			font-size: 13px
+			line-height: 20px
+			font-weight: bold
+			margin-left: 18px
+			margin-top: 12px
+		.company
+			font-weight: lighter
+			margin-left: 3px
+				
 
 

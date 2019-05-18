@@ -14,7 +14,8 @@ var gulp = require("gulp"),
 var path = {
 	src: {
 		sass: "./sass/**/*.sass",
-		pug: "./pug/**/*.pug",
+		pug: "./pug/index.pug",
+		pugWatch: "./pug/**/*.pug",
 		concat: [
 			"node_modules/jquery/dist/jquery.min.js",
 			"node_modules/owl.carousel/dist/owl.carousel.js",
@@ -69,7 +70,7 @@ gulp.task('sprite', function () {
 
 gulp.task("watch", function(){
 	gulp.watch(path.src.sass, gulp.series("sass"));
-	gulp.watch(path.src.pug, gulp.series("pug"));
+	gulp.watch(path.src.pugWatch, gulp.series("pug"));
 	gulp.watch("lib/*.js", gulp.series("concat"));
 });
 
