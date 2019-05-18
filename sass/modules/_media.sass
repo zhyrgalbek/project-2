@@ -44,11 +44,11 @@
 	.main
 		.main-head
 			.main-block
-				width: 100%
+				width: 50%
 				&:nth-child(2n+1)
-					width: 100%
+					width: 50%
 				&_icon
-					flex-shrink: 1.3
+					// flex-shrink: 1.3
 	.container
 		padding-left: 20px
 		padding-right: 20px
@@ -72,7 +72,27 @@
 				// border: 1px solid green
 				.main-tabs
 					flex-flow: row wrap
+	.footer
+		.container
+			.business
+				// justify-content: space-between
+				&-item
+					margin-top: 20px					
+					width: 50%
+					// border: 1px solid red
+					box-sizing: border-box
+	                // padding-right: 30 / $container * 100%
+					&:nth-child(2n+1)
+						padding-right: 30px
+					&:nth-child(3n+1)
+						// padding-left: 20px
 @media screen and (max-width: 480px)
+	.main
+		.main-head
+			.main-block
+				width: 100%
+				&:nth-child(2n+1)
+					width: 100%
 	.main
 		.main-head
 			.main-block
@@ -95,3 +115,9 @@
 					li
 						margin-left: 0
 						// border: 1px solid green
+	.footer
+		.container
+			.business
+				&-item
+					width: 100%
+					margin-top: 20px

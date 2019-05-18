@@ -209,17 +209,27 @@ html(lang="en")
 							.business-item
 								h3 latest tweets
 								ul
-									li.item_text.
-										Curabitur felis nibh, lacinia non rhoncus vel,
-										lobortis et lorem. Class aptent taciti sociosqu ad litora torquent per
-										conubia nostra, per
-									li.item_text.
-										Curabitur felis nibh, lacinia non rhoncus vel,
-										lobortis et lorem. Class aptent taciti sociosqu ad
-										litora torquent
+									li.icon_twitter
+										a(href="#").contact_icon
+											span.icon-twitter
+										.item_text.m-0
+											|Curabitur felis nibh, lacinia non rhoncus vel,
+											|lobortis et lorem. Class aptent taciti sociosqu ad litora torquent per
+											|conubia nostra, per
+											span.ago 5 hourse ago
+									li.icon_twitter
+										a(href="#").contact_icon
+											span.icon-twitter
+										.item_text.m-0
+											|Curabitur felis nibh, lacinia non rhoncus vel,
+											|lobortis et lorem. Class aptent taciti sociosqu ad
+											|litora torquent
+											span.ago 5 hourse ago
 							.business-item
 								h3 News letter
 								p.item_text.
 									Type your email address below and recive our daily news letter for free
-
+								form.business-item_form
+									input(Type="text" placeholder="Email address").form-text
+									button.form-btn submit
 		script(src="js/all.js")
