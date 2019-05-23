@@ -1,5 +1,5 @@
 - var navText = ["Home", "Services", "About", "portfolio", "Testimous","contact"]
-header.header
+header.header#home
 	#carousel-1.owl-carousel.owl-theme
 		.item
 			.item-info
@@ -15,7 +15,20 @@ header.header
 		.hamburger.hamburger--elastic
 			.hamburger-box
 				.hamburger-inner
+		//- ul.nav
+		//- 	each val in navText
+		//- 		li.nav-li
+		//- 			a(href="#").nav-link= 
 		ul.nav
-			each val in navText
-				li.nav-li
-					a(href="#").nav-link= val
+			li.nav-li
+				a(href="#home").nav-link Home
+			li.nav-li
+				a(href="#services").nav-link services
+			li.nav-li
+				a(href="#about").nav-link about
+			li.nav-li
+				a(href="#portfolio").nav-link portfolio
+			li.nav-li
+				a(href="#testimous").nav-link testimous
+			li.nav-li
+				a(href="#contact").nav-link contact
