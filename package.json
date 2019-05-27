@@ -14,10 +14,12 @@
     "gulp-spritesmith": "^0.0.2"
   },
   "dependencies": {
+    "animate.css": "^3.7.0",
     "gulp-imagemin": "4.1.0",
     "hamburgers": "^1.1.3",
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.1",
-    "owl.carousel": "^2.3.4"
+    "owl.carousel": "^2.3.4",
+    "wow.js": "^1.2.2"
   }
 }

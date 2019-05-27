@@ -1,4 +1,6 @@
+new WOW().init();
 $(document).ready(function () {
+	// new WOW().init();
 	$("#carousel-1").owlCarousel({
 		items: 1,
 		loop: true,
@@ -49,8 +51,8 @@ $(document).ready(function () {
 		stageClass: 'owl-stage',
 		stageOuterClass: 'owl-stage-outer',
 		grabClass: 'owl-grab',
-		autoplay: true,
-		autoplayTimeout: 3000,
+		// autoplay: true,
+		// autoplayTimeout: 3000,
 		autoplayHoverPause: true
 	});
 	var p = "%";
@@ -58,7 +60,7 @@ $(document).ready(function () {
 		loop: true,
 		margin: 260,
 		// autoplay: true,
-		autoplayTimeout: 3000,
+		// autoplayTimeout: 3000,
 		autoplayHoverPause: true,
 		// nav:true,
 		navText: ["prev", "next"],
