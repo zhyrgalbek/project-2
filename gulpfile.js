@@ -13,15 +13,15 @@ var gulp = require("gulp"),
 
 var path = {
 	src: {
-		sass: "./sass/**/*.sass",
-		pug: "./pug/index.pug",
-		pugWatch: "./pug/**/*.pug",
+		sass: "./src/sass/**/*.sass",
+		pug: "./src/pug/index.pug",
+		pugWatch: "./src/pug/**/*.pug",
 		concat: [
 			"node_modules/jquery/dist/jquery.min.js",
 			"node_modules/owl.carousel/dist/owl.carousel.js",
-			"lib/*.js"
+			"./src/lib/*.js"
 		],
-		fontgen: "fonts/*.{ttf,otf}"
+		fontgen: "./src/fonts/*.{ttf,otf}"
 	},
 	dest: {
 		sass: "dist/css",
@@ -42,7 +42,7 @@ function fonts(){
 
 
 gulp.task("imagemin", function(){
-	return gulp.src("img/*")
+	return gulp.src("./src/img/*")
 		.pipe(imagemin([
 			imagemin.gifsicle({interlaced: true}),
 			imagemin.jpegtran({progressive: true}),
@@ -71,7 +71,7 @@ gulp.task('sprite', function () {
 gulp.task("watch", function(){
 	gulp.watch(path.src.sass, gulp.series("sass"));
 	gulp.watch(path.src.pugWatch, gulp.series("pug"));
-	gulp.watch("lib/*.js", gulp.series("concat"));
+	gulp.watch("./src/lib/*.js", gulp.series("concat"));
 });
 
  gulp.task("Hello", function(){

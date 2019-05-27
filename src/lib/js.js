@@ -101,6 +101,14 @@ $(document).ready(function () {
 		var target = $(this).attr('href');
 		$('html, body').animate({
 			scrollTop: $(target).offset().top
+			// scrollTop: $(target).fadeIn()
 		}, 500);
+	});
+	$(window).scroll(function(){
+		var top = $(document).scrollTop();
+		if( top < 550)
+			$(".header-container").removeClass("fixed");
+		else
+			$(".header-container").addClass("fixed");
 	});
 });
