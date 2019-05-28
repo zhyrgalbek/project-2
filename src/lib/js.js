@@ -51,7 +51,7 @@ $(document).ready(function () {
 		stageClass: 'owl-stage',
 		stageOuterClass: 'owl-stage-outer',
 		grabClass: 'owl-grab',
-		// autoplay: true,
+		autoplay: false,
 		// autoplayTimeout: 3000,
 		autoplayHoverPause: true
 	});
@@ -59,7 +59,7 @@ $(document).ready(function () {
 	$("#carousel-2").owlCarousel({
 		loop: true,
 		margin: 260,
-		// autoplay: true,
+		autoplay: false,
 		// autoplayTimeout: 3000,
 		autoplayHoverPause: true,
 		// nav:true,
