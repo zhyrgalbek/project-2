@@ -14,10 +14,20 @@
                 // padding-right: 30 / $container * 100%
                 box-sizing: border-box
                 min-height: 200px
+                &:first-child 
+                    h3
+                        font:
+                            family: $pacifico, sans-serif
+                            weight: 400
+                            style: normal
                 h3
+                    font:
+                        family: $opensans, sans-serif
+                        weight: 400
+                        style: normal
                     text-transform: capitalize
                     color: #fff
-                    font-size: 22px
+                    font-size: 25px
                     line-height: 20px
                 &_form
                     // border: 1px solid red
@@ -27,6 +37,10 @@
                     justify-content: space-between
                     // align-content: stretch
                     .form-text
+                        font:
+                            family: $opensans, sans-serif
+                            weight: 400
+                            style: normal
                         padding: 10px 18px
                         padding-right: 0
                         color: #a7a7a7
@@ -48,8 +62,12 @@
                         // flex-shrink: 1
                         flex-basis: 30%
                 .item_text
+                    font:
+                        family: $opensans, sans-serif
+                        weight: 400
+                        style: normal
                     margin-top: 18px
-                    font-size: 16px
+                    font-size: 14px
                     line-height: 20px
                     // color: #c4c4c4
                     color: #c4c4c4
@@ -58,6 +76,7 @@
                     padding-left: 10px
                 .ago
                     display: block
+                    text-transform: capitalize
                     color: #6caecc                    
                 ul
                     list-style-type: none

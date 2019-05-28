@@ -22,23 +22,20 @@ var path = {
 			"node_modules/wow.js/dist/wow.min.js",
 			"./src/lib/*.js"
 		],
-		fontgen: "./src/fonts/*.{ttf,otf}"
+		fonts: "./src/fonts/**/*.*"
 	},
 	dest: {
 		sass: "dist/css",
 		pug: "./dist/",
 		concat: "dist/js/",
-		fontgen: "dist/fonts"
+		fonts: "dist/fonts"
 	}
 }
-function fonts(){
-	return gulp.src(path.src.fontgen)
-		.pipe(fontgen({
-			dest: path.dest.fontgen
-		}));
-}
 
-
+gulp.task("fonts", function(){
+	return gulp.src(path.src.fonts)
+		.pipe(gulp.dest(path.dest.fonts))
+});
 
 
 
